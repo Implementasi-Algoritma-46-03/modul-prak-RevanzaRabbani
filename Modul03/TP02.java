@@ -1,6 +1,21 @@
+import java.util.Scanner;
+
 public class TP02 {
 
-    public static void main(final String[] args) {
-        // Kerjakan soalnya di sini
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in); // ❌ System.ini → ✅ System.in
+
+        // Input
+        String nama = input.next();            // Membaca nama (satu kata)
+        int jumlah = input.nextInt();          // ❌ nextint → ✅ nextInt
+        int harga = input.nextInt();           // Harga per barang
+
+        // Proses
+        int total = harga * jumlah;
+
+        // Output
+        System.out.println("Hai, " + nama + ". Total belanja adalah " + total + " rupiah.");
+
+        input.close();
     }
 }

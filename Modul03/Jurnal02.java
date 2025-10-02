@@ -12,7 +12,7 @@ public class Jurnal02 {
 
         double median = (A + B + C) / 3;
 
-        System.out.printf("%.2f",median);
+        System.out.printf("Nilai rata-rata: %.2f",median);
         input.close();
     }
 }

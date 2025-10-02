@@ -10,7 +10,7 @@ public class Jurnal03 {
         int B = input.nextInt();
 
         double penilaian = ((0.25 * P )) + ((0.35 * A )) + (( 0.40 * B ));
-        System.out.printf("%2f",penilaian);
+        System.out.printf("%.2f",penilaian);
         System.out.println();
         boolean mk = penilaian >= 75;
         System.out.println("Lulus MK: " + mk);

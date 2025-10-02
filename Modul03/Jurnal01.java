@@ -13,6 +13,5 @@ public class Jurnal01 {
 
         System.out.println(lembarSeribu);
         System.out.println(sisauang);
-        input.close();
     }
 }

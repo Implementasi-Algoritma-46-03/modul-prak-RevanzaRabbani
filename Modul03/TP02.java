@@ -3,11 +3,11 @@ import java.util.Scanner;
 public class TP02 {
 
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in); // ❌ System.ini → ✅ System.in
+        Scanner input = new Scanner(System.in); 
 
         // Input
-        String nama = input.next();            // Membaca nama (satu kata)
-        int jumlah = input.nextInt();          // ❌ nextint → ✅ nextInt
+        String nama = input.next();            // Membaca nama
+        int jumlah = input.nextInt();          
         int harga = input.nextInt();           // Harga per barang
 
         // Proses

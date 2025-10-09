@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Jurnal03 {
+public class TP03 {
    public Jurnal03() {
    }
 

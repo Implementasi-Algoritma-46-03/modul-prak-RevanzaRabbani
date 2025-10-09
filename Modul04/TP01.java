@@ -13,7 +13,7 @@ public class TP01 {
         if (nilaiN % 6 == 0) {
             System.out.println("kelipatan enam");
         } else {
-            System.out.println("Bukan Kelipatan enam");
+            System.out.println("Bukan kelipatan enam");
         }
 
         input.close();

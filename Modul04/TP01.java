@@ -11,7 +11,7 @@ public class TP01 {
 
         // cek apakah nilaiN kelipatan enam 
         if (nilaiN % 6 == 0) {
-            System.out.println("kelipatan enam");
+            System.out.println("Kelipatan enam");
         } else {
             System.out.println("Bukan kelipatan enam");
         }

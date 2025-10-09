@@ -11,5 +11,5 @@ public class Jurnal01 {
             System.out.println("Faktor dari 24 dan 56");
         } else {
             System.out.println("Bukan faktor dari 24 dan 56");
-    }
+    }}
 }

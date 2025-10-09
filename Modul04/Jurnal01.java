@@ -8,9 +8,8 @@ public class Jurnal01 {
         int N = scanner.nextInt();
 
         if (24 % N == 0 && 56 % N == 0) {
-            System.out.println(N + " adalah faktor dari 24 dan 56");
+            System.out.println("Faktor dari 24 dan 56");
         } else {
-            System.out.println(N + " bukan faktor dari 24 dan 56");
-        }
+            System.out.println("Bukan faktor dari 24 dan 56");
     }
 }

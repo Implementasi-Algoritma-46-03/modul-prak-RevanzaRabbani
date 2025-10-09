@@ -1,10 +1,8 @@
 import java.util.Scanner;
 
 public class TP03 {
-   public Jurnal03() {
-   }
 
-   public static void main(String[] var0) {
+   public static void main(final String[] args) {
       Scanner var1 = new Scanner(System.in);
       int var2 = var1.nextInt();
       int var3 = var1.nextInt();

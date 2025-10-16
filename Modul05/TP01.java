@@ -14,37 +14,37 @@ public class TP01 {
                     System.out.println("janvier");
                     break;
                 case "februari":
-                    System.out.println("Février");
+                    System.out.println("fevrier");
                     break;
                 case "maret":
-                    System.out.println("Mars");
+                    System.out.println("mars");
                     break;
                 case "april":
-                    System.out.println("Avril");
+                    System.out.println("avril");
                     break;
                 case "mei":
-                    System.out.println("Peut");
+                    System.out.println("peut");
                     break;
                 case "juni":
-                    System.out.println("Juin");
+                    System.out.println("juin");
                     break;
                 case "juli":
-                    System.out.println("Juillet");
+                    System.out.println("juillet");
                     break;
                 case "agustus":
-                    System.out.println("Août");
+                    System.out.println("aout");
                     break;
                 case "september":
                     System.out.println("Septembre");
                     break;
                 case "oktober":
-                    System.out.println("Octobre");
+                    System.out.println("octobre");
                     break;
                 case "november":
-                    System.out.println("Novembre");
+                    System.out.println("novembre");
                     break;
                 case "desember":
-                    System.out.println("Décembre");
+                    System.out.println("decembre");
                     break;
                 default:
                     break;

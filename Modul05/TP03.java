@@ -1,5 +1,5 @@
 import java.util.Scanner;
-///Update buat comit
+
 public class TP03 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -31,7 +31,7 @@ public class TP03 {
                 double sisiMiring = Math.sqrt(alas * alas + tinggi * tinggi);
                 double kelilingSegitiga = alas + tinggi + sisiMiring;
 
-                if (luasSegitiga % 1 == 0 && kelilingSegitiga % 1 == 0) {
+                if (isInteger(luasSegitiga) && isInteger(kelilingSegitiga)) {
                     System.out.printf("%.0f %.0f\n", luasSegitiga, kelilingSegitiga);
                 } else {
                     System.out.printf("%.2f %.2f\n", luasSegitiga, kelilingSegitiga);
@@ -45,7 +45,7 @@ public class TP03 {
                 double luasLingkaran = phi * jariJari * jariJari;
                 double kelilingLingkaran = phi * diameter;
 
-                if (luasLingkaran % 1 == 0 && kelilingLingkaran % 1 == 0) {
+                if (isInteger(luasLingkaran) && isInteger(kelilingLingkaran)) {
                     System.out.printf("%.0f %.0f\n", luasLingkaran, kelilingLingkaran);
                 } else {
                     System.out.printf("%.2f %.2f\n", luasLingkaran, kelilingLingkaran);
@@ -57,5 +57,11 @@ public class TP03 {
         }
 
         scanner.close();
+    }
+
+    // Fungsi bantu untuk mengecek apakah double hampir sama dengan integer
+    public static boolean isInteger(double value) {
+        double epsilon = 1e-2;
+        return Math.abs(value - Math.round(value)) < epsilon;
     }
 }

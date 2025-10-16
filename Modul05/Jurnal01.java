@@ -10,7 +10,7 @@ public class Jurnal01 {
 
         String namaMenu = "";
         int hargaSatuan = 0;
-        int totalHarga = 0;
+        double totalHarga = 0;
 
         switch (kodeMenu) {
             case 1:

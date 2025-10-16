@@ -23,7 +23,7 @@ public class TP01 {
                     System.out.println("avril");
                     break;
                 case "mei":
-                    System.out.println("peut");
+                    System.out.println("mai");
                     break;
                 case "juni":
                     System.out.println("juin");
@@ -38,7 +38,7 @@ public class TP01 {
                     System.out.println("Septembre");
                     break;
                 case "oktober":
-                    System.out.println("octobre");
+                    System.out.println("oktobre");
                     break;
                 case "november":
                     System.out.println("novembre");

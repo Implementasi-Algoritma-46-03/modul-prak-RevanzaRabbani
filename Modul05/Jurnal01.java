@@ -10,7 +10,7 @@ public class Jurnal01 {
 
         String namaMenu = "";
         int hargaSatuan = 0;
-        double totalHarga = 0;
+        int totalHarga = 0;
 
         switch (kodeMenu) {
             case 1:
@@ -36,6 +36,6 @@ public class Jurnal01 {
 
         totalHarga = hargaSatuan * jumlahMakanan;
 
-        System.out.printf("%s %d buah, total harga Rp. %.d\n", namaMenu, jumlahMakanan, totalHarga);
+        System.out.printf("%s %d buah, total harga Rp. %,d\n", namaMenu, jumlahMakanan, totalHarga);
     }
 }

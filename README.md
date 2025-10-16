@@ -1,8 +1,8 @@
 ## Identitas
 
-Nama: Pasya Muhammad Rizky
+Nama: Revanza Sapta Rabbani 
 
-NIM : 607062500047
+NIM : 607062500039
 
 ## Instruksi
 

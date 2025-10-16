@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Jurnal02 {
-
+///Update buat comit
     public static void main(final String[] args) {
         Scanner in = new Scanner(System.in);
 

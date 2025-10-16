@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class TP01 {
-
+///Update buat comit
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

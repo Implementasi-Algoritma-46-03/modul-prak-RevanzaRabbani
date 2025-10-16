@@ -7,33 +7,33 @@ public class Jurnal02 {
         String hariAwal = input.nextLine();
         int n = input.nextInt();
 
-        int namaHari;
+        int namaHari = 0;
         switch (hariAwal) {
-            case "Senin":
-                namaHari = 0;
-                break;
-            case "Selasa":
-                namaHari = 1;
-                break;
-            case "Rabu":
-                namaHari = 2;
-                break;
-            case "Kamis":
-                namaHari = 3;
-                break;
-            case "Jumat":
-                namaHari = 4;
-                break;
-            case "Sabtu":
-                namaHari = 5;
-                break;
-            case "Minggu":
-                namaHari = 6;
-                break;
-            default:
-                System.out.println("Hari tidak valid");
-                return;
-        }
+        case "Senin":
+            namaHari = 0;
+            break;
+        case "Selasa":
+            namaHari = 1;
+            break;
+        case "Rabu":
+            namaHari = 2;
+            break;
+        case "Kamis":
+            namaHari = 3;
+            break;
+        case "Jum'at":
+            namaHari = 4;
+            break;
+        case "Sabtu":
+            namaHari = 5;
+            break;
+        case "Minggu":
+            namaHari = 6;
+            break;
+    default:
+        System.out.println("Hari tidak valid");
+        return;
+}
 
         int indexHasil = (namaHari + n) % 7;
 
@@ -52,7 +52,7 @@ public class Jurnal02 {
                 hasilHari = "Kamis";
                 break;
             case 4:
-                hasilHari = "Jumat";
+                hasilHari = "Jum'at";
                 break;
             case 5:
                 hasilHari = "Sabtu";

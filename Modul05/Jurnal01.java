@@ -36,6 +36,6 @@ public class Jurnal01 {
 
         totalHarga = hargaSatuan * jumlahMakanan;
 
-        System.out.printf("%s %d buah, total harga Rp. %,d\n", namaMenu, jumlahMakanan, totalHarga);
+        System.out.printf("%s %d buah, total harga Rp. %.d\n", namaMenu, jumlahMakanan, totalHarga);
     }
 }

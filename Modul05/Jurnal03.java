@@ -32,5 +32,5 @@ public class Jurnal03 {
         }
 
         scanner.close();
-    }
+    }
 }

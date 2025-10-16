@@ -3,39 +3,31 @@ import java.util.Scanner;
 public class Jurnal01 {
 
     public static void main(final String[] args) {
+        // Kerjakan soalnya di sini
         Scanner input = new Scanner(System.in);
 
+        // input sebuah pesanan dan kode menu makanan yang dipesan
         int kodeMenu = input.nextInt();
         int jumlahMakanan = input.nextInt();
-
-        String namaMenu = "";
-        int hargaSatuan = 0;
-        int totalHarga = 0;
+        double totalHarga = 0;
 
         switch (kodeMenu) {
             case 1:
-                namaMenu = "Nasi Goreng";
-                hargaSatuan = 15000;
+                totalHarga = jumlahMakanan * 15.000;
+                System.out.printf("Nasi Goreng " + jumlahMakanan + " buah, " + "total harga Rp. " + "%.3f", totalHarga);
                 break;
             case 2:
-                namaMenu = "Mie Goreng / Nyemek";
-                hargaSatuan = 18000;
+                totalHarga = jumlahMakanan * 18.000;
+                System.out.printf("Mie Goreng / Nyemek " + jumlahMakanan + " buah, " + "total harga Rp. " + "%.3f", totalHarga);
                 break;
             case 3:
-                namaMenu = "Kwetiau Goreng / Nyemek";
-                hargaSatuan = 20000;
+                totalHarga = jumlahMakanan * 20.000;
+                System.out.printf("Kwetiau Goreng / Nyemek " + jumlahMakanan + " buah, " + "total harga Rp. " + "%.3f", totalHarga);
                 break;
             case 4:
-                namaMenu = "Capcay Goreng / Kuah";
-                hargaSatuan = 23000;
+                totalHarga = jumlahMakanan * 23.000;
+                System.out.printf("Capcay Goreng / Kuah " + jumlahMakanan + " buah, " + "total harga Rp. " + "%.3f", totalHarga);
                 break;
-            default:
-                System.out.println("Kode menu tidak valid.");
-                return;
         }
-
-        totalHarga = hargaSatuan * jumlahMakanan;
-
-        System.out.printf("%s %d buah, total harga Rp. %,d\n", namaMenu, jumlahMakanan, totalHarga);
-    }
+   }
 }

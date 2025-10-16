@@ -1,5 +1,5 @@
 import java.util.Scanner;
-///Update buat comit testtt
+///Update buat comit testttaaa
 public class TP02 {
 
     public static void main(final String[] args) {

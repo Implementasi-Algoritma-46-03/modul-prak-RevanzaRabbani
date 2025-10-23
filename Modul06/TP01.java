@@ -36,6 +36,6 @@ public class TP01 {
 
         // Menampilkan hasil dengan satu angka di belakang koma
         System.out.printf("Celcius: %.1f %.1f %.1f\n", C1, C2, C3);
-        System.out.printf("Reamur: %.1f %.1f %.1f\n", Re1, Re2, Re3);
+        System.out.printf("Reamur: %.2f %.2f %.2\n", Re1, Re2, Re3);
     }
 }

@@ -1,8 +1,8 @@
 ## Identitas
 
-Nama: 
+Nama: Revanza Sapta Rabbani
 
-NIM : 
+NIM : 607062500039
 
 ## Instruksi
 

@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Jurnal03 {
     public static void main(final String[] args) {
+        
         Scanner s = new Scanner(System.in);
         int n = s.nextInt();     
         int asli = n;            

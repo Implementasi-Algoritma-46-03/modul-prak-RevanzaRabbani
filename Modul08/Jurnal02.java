@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Jurnal02 {
     public static void main(final String[] args) {
+        
         Scanner s = new Scanner(System.in);
         int total = 0;
         int jumlah = 0;

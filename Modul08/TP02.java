@@ -8,7 +8,7 @@ public class TP02 {
 
         while (n != 0) {
             int digit = n % 10; 
-            hasil = hasil 10 + digit;
+            hasil = hasil * 10 + digit; 
             n /= 10; 
         }
 

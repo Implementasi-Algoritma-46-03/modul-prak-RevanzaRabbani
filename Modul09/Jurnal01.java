@@ -9,6 +9,6 @@ public class Jurnal01 {
             if (i < 10) {
                 System.out.print( " ");
             }
-        }
-    }
+        }
+    }
 }

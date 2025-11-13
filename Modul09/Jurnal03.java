@@ -24,6 +24,6 @@ public class Jurnal03 {
             System.out.println("YA");
         } else {
             System.out.println("BUKAN");
-        }
-    }
+        }
+    }
 }

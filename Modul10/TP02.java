@@ -24,7 +24,5 @@ public class TP02 {
             }
             System.out.println(i);
         }
-
-
     }
 }

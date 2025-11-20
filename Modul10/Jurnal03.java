@@ -1,30 +1,16 @@
 import java.util.Scanner;
-
 public class Jurnal03 {
-
-    public static void main(final String[] args) {
-        // Kerjakan soalnya di sini
+    public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        int N = input.nextInt(); 
+        int angkaSaatini = 0;
 
-        // Input bilangan bulat N di mana 1 <= N <= 100
-        int n = input.nextInt();
-
-        // Inisialisasi variabel pelacak angka
-        int bilanganSaatIni = 0;
-        
-        // menentukan baris ke samping dan ke bawah
-        for (int i = 1; i <= n; i++) {
-            // Nested For untuk membuat kolom dan membuat isi kolom seperti di output soal
-            for (int j = 1; j <= n - (i - 1); j++) {
-                System.out.print(bilanganSaatIni + " ");
-                bilanganSaatIni = (bilanganSaatIni + 1) % 10;
+        for (int i = N; i >= 1; i-= 1) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(angkaSaatini % 10); 
+                angkaSaatini++;
             }
-
-            // Menampilkan hasil
-            System.out.println();
-        }
-
-        // Menutup Scanner
-        input.close();
-    }
+            System.out.println(); 
+        }
+    }
 }

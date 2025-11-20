@@ -11,6 +11,6 @@ public class Jurnal03 {
                 angkaSaatini++;
             }
             System.out.println(); 
-        }
-    }
+        }
+    }
 }

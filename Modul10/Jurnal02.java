@@ -9,6 +9,6 @@ public class Jurnal02 {
                 System.out.print(i * j + " ");
             }
             System.out.println(); 
-        }
-    }
+        }
+    }
 }

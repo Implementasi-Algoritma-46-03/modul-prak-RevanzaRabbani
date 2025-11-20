@@ -14,7 +14,7 @@ public class Jurnal02 {
             // For loop untuk membuat kolom dan melakukan perkalian
             for (int j = 1; j <= bilanganBulat; j++) {
                 int hasilPerkalian = j * i;
-                System.out.printf("%-6d", hasilPerkalian);
+                System.out.printf("%-6d", hasilPerkalian); // mencetak agar rapih
             }
 
             // Menampilkan hasil

@@ -12,7 +12,7 @@ public class Jurnal03 {
         // Inisialisasi variabel pelacak angka
         int bilanganSaatIni = 0;
         
-        // For loop untuk membuat baris
+        // menentukan baris ke samping dan ke bawah
         for (int i = 1; i <= n; i++) {
             // Nested For untuk membuat kolom dan membuat isi kolom seperti di output soal
             for (int j = 1; j <= n - (i - 1); j++) {

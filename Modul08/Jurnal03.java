@@ -9,7 +9,7 @@ public class Jurnal03 {
         int total = 0;
 
         while (n > 0) {
-            int digit = n % 10;          
+            int digit = n % 10;          ///bikin variable baru n
             int faktorial = 1;
 
             // hitung faktorial dari digit

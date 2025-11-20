@@ -12,7 +12,7 @@ public class Jurnal03 {
             prima = false;
         } else {
             
-            for (int i = 2; i <= Math.sqrt(N); i++) {
+            for (int i = 2; i <= Math.sqrt(N); i++) { ///rumus menghitung akar kuadrat
                 if (N % i == 0) { 
                     prima = false;
                     break; 

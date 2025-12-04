@@ -85,6 +85,6 @@ public class Jurnal02 {
             }
         }
 
-        return true; // Tidak ada 0 → papan penuh → seri
+        return true; // Tidak ada 0 → papan penuh → seri ggg
     }
 }

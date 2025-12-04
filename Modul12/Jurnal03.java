@@ -40,7 +40,7 @@ public class Jurnal03 {
                 if (j < N - 1)
                     System.out.print(" ");
             }
-            System.out.println();
+            System.out.println(); ///ggg
         }
     }
 }

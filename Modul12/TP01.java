@@ -16,6 +16,6 @@ public class TP01 {
             }
 
         }
-        System.out.println(total);
+        System.out.println(total); ///ggg
     }
 }

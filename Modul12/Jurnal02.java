@@ -100,10 +100,10 @@ public class Jurnal02 {
         for (int i = 0; i < matriks.length; i++) {
             for (int j = 0; j < matriks.length; j++) {
                 if (matriks[i][j] == 0) {
-                    return false; // Masih ada ruang kosong → belum seri
+                    return false; // Masih ada ruang kosong -> belum seri
                 }
             }
         }
-        return true; // Tidak ada 0 → papan penuh → seri
+        return true; // Tidak ada 0 -> papan penuh -> seri
     }
 }

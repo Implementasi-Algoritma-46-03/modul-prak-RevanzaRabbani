@@ -19,56 +19,77 @@ public class Jurnal02 {
 
         if (hasil == 1) {
             System.out.println("O");
-        } 
-        else if (hasil == 2) {
+        } else if (hasil == 2) {
             System.out.println("X");
-        } 
-        else {
+        } else {
             if (seri(matriks)) {
                 System.out.println("-");
             } else {
                 System.out.println("?");
             }
         }
+
+        s.close();
     }
 
-    // Menentukan pemenang tic-tac-toe
+    // Menentukan pemenang tic-tac-toe (dinamis untuk N x N)
     private static int pemenang(int[][] matriks) {
+        int N = matriks.length;
 
         // Cek baris
-        for (int i = 0; i < matriks.length; i++) {
-            if (matriks[i][0] == matriks[i][1] &&
-                matriks[i][1] == matriks[i][2] &&
-                matriks[i][0] != 0) 
-            {
-                return matriks[i][0];
+        for (int i = 0; i < N; i++) {
+            int first = matriks[i][0];
+            if (first != 0) {
+                boolean sama = true;
+                for (int j = 1; j < N; j++) {
+                    if (matriks[i][j] != first) {
+                        sama = false;
+                        break;
+                    }
+                }
+                if (sama) return first;
             }
         }
 
         // Cek kolom
-        for (int j = 0; j < matriks.length; j++) {
-            if (matriks[0][j] == matriks[1][j] &&
-                matriks[1][j] == matriks[2][j] &&
-                matriks[0][j] != 0) 
-            {
-                return matriks[0][j];
+        for (int j = 0; j < N; j++) {
+            int first = matriks[0][j];
+            if (first != 0) {
+                boolean sama = true;
+                for (int i = 1; i < N; i++) {
+                    if (matriks[i][j] != first) {
+                        sama = false;
+                        break;
+                    }
+                }
+                if (sama) return first;
             }
         }
 
         // Cek diagonal utama
-        if (matriks[0][0] == matriks[1][1] &&
-            matriks[1][1] == matriks[2][2] &&
-            matriks[0][0] != 0) 
-        {
-            return matriks[0][0];
+        int first = matriks[0][0];
+        if (first != 0) {
+            boolean sama = true;
+            for (int i = 1; i < N; i++) {
+                if (matriks[i][i] != first) {
+                    sama = false;
+                    break;
+                }
+            }
+            if (sama) return first;
         }
 
         // Cek diagonal kedua
-        if (matriks[2][0] == matriks[1][1] &&
-            matriks[1][1] == matriks[0][2] &&
-            matriks[2][0] != 0) 
-        {
-            return matriks[2][0];
+        first = matriks[0][N - 1];
+        if (first != 0) {
+            boolean sama = true;
+            for (int i = 1; i < N; i++) {
+                if (matriks[i][N - 1 - i] != first) {
+                    sama = false;
+                    break;
+                }
+            }
+            if (sama) return first;
         }
 
         return 0; // Tidak ada pemenang
@@ -76,7 +97,6 @@ public class Jurnal02 {
 
     // Mengecek apakah seri
     private static boolean seri(int[][] matriks) {
-
         for (int i = 0; i < matriks.length; i++) {
             for (int j = 0; j < matriks.length; j++) {
                 if (matriks[i][j] == 0) {
@@ -84,7 +104,6 @@ public class Jurnal02 {
                 }
             }
         }
-
-        return true; // Tidak ada 0 → papan penuh → seri ggg
+        return true; // Tidak ada 0 → papan penuh → seri
     }
 }

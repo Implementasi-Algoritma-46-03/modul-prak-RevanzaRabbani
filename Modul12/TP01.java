@@ -3,19 +3,31 @@ import java.util.Scanner;
 public class TP01 {
 
     public static void main(final String[] args) {
-        Scanner s = new Scanner(System.in);
-        int N = s.nextInt();
+        // Kerjakan soalnya di sini
+        Scanner input = new Scanner(System.in);
 
-        int[][] matriks = new int[N][N];
+        // Input sebuah bilangan bulat N di mana 2 <= N <= 10
+        int bilanganBulatN = input.nextInt();
+
+        // Array 2D
+        int matriks[][] = new int[bilanganBulatN][bilanganBulatN];
+        
+        // Inisialisasi variabel total
         int total = 0;
-
-        for (int i=0; i<N; i++) {
-            for (int j=0; j<N; j++) {
-                matriks[i][j] = s.nextInt();
-                total += matriks[i][j];
+        
+        // Nested For
+        for (int i = 0; i < bilanganBulatN; i++) {
+            for (int j = 0; j < bilanganBulatN; j++) {
+            matriks[i][j] = input.nextInt();
+            total += matriks[i][j];
             }
-
         }
-        System.out.println(total); ///ggg
+
+
+        // Mencetak hasil
+        System.out.println(total);
+
+        // Menutup Scanner
+        input.close();
     }
 }
